@@ -4,17 +4,41 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>jQuery to do list</title>
+	<link rel="stylesheet" type="text/css" href="/lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-	
+
+<div class="task-list">
+  <h3>Add a task</h3>
+  <form id="todo-form">
+    <input id="userSubmitTitle" type="text" placeholder="Enter Task Here">
+  </form>
+  <button id="addTaskBtn" type="button" class="btn btn-primary" value="Add Task">Add Task</button>
+  <button id="clearData" type="button" class="btn btn-primary" value="Clear Data">Clear All Tasks</button>
+</div>
+
+<div class="task-list" id="pending">
+  <h3>Tasks</h3>
+  <h6>Single Click to mark task complete</h6>
+  <h6>Single Click again to mark task incomplete</h6>
+  <h6>Double-Click to remove task</h6>
+  	<ul id="addedTask" class="todo-task">
+  		<input id="editInput" class="hidden" type="text" name="" value="" placeholder="">
+  	</ul>
+</div>
+
+<div class="task-list" id="com">
+  <h3>Completed</h3>
+    <ul id="completedTasks"></ul>
+</div>
 
 
 
 
-
-	
+  <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
 	<script type="text/javascript" src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="javascripts/main.js"></script>
 </body>
 </html>

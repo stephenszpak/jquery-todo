@@ -1,3 +1,16 @@
+body {
+  
+  text-align: center;
+}
+
+#pending {
+  width: 50%;
+}
+
+#edit {
+  width: 50px;
+}
+
 .task-list {
   width: 250px;
   float: left;
@@ -17,13 +30,21 @@
   height: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
 .todo-task {
   border-radius: 5px;
   background-color: #fff;
-  width: 230px;
+  width: 98%;
   margin: 5px;
   padding: 5px;
 }
+
+#editInput {
+  width: 98%;
+} 
 
 .strike {
   text-decoration: line-through;
@@ -34,17 +55,9 @@
   margin: 5px;
 }
 
-.todo-task > .task-header {
-  font-weight: bold;
-}
+li {
+  list-style-type: none;
 
-.todo-task > .task-date {
-  font-size: small;
-  font-style: italic;
-}
-
-.todo-task > .task-description {
-  font-size: smaller;
 }
 
 h3 {
